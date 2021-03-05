@@ -20,7 +20,7 @@ class App extends Component {
         <Router>
           <Navbar />
           <Switch>
-            <Route path="/trim" exact component={Header} />
+            <Route path="/" exact component={Header} />
             <Route path="/services" exact component={Services} />
             <Route path="/gallery" exact component={GalleryComp} />
             <Route path="/about" exact component={About} />
