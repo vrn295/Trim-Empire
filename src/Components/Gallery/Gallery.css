@@ -1,0 +1,61 @@
+.nav-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 40vh;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.75);
+  width: 100vw;
+  position: relative;
+  z-index: -2;
+  background: #1e1e1e;
+  color: white;
+}
+
+.nav-box-text {
+  font-size: 4vw;
+  margin: 3vw;
+  font-family: Roboto;
+}
+
+/* #gallery-nav-box {
+  background-image: url("../Media/pexels-mostafa-meraji-3037244.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.gallery-img-container {
+  width: 80vw;
+  margin: 5vw 10vw 5vw 10vw;
+}
+
+.gallery {
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-box {
+    height: 20vh;
+    background-position-x: 50%;
+  }
+  .nav-box-text {
+    font-size: 6vw;
+  }
+  .gallery-img-container {
+    width: 90vw;
+    margin: 5vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-box {
+    height: 20vh;
+    background-position-x: 50%;
+  }
+  .nav-box-text {
+    font-size: 8vw;
+  }
+  .gallery-img-container {
+    width: 90vw;
+    margin: 5vw;
+  }
+}

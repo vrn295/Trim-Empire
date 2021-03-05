@@ -1,0 +1,81 @@
+.products {
+  margin-top: 8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-h1 {
+  font-family: "Alata", sans-serif;
+  font-size: 3.5vw;
+  margin-bottom: 2vh;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vw 4vw;
+}
+.product-img {
+  max-width: 20vw;
+  transition: 0.2s ease-out;
+}
+
+.product-img:hover {
+  transform: scale(1.1);
+}
+
+.product-name {
+  font-family: "Alata", sans-serif;
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.product-price {
+  font-family: "Alata", sans-serif;
+  font-weight: lighter;
+  margin-top: 1vh;
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .product-img {
+    max-width: 25vw;
+  }
+  .product-h1 {
+    font-size: 6vw;
+  }
+
+  .product-name {
+    font-size: 5vw;
+  }
+  .product-price {
+    margin-top: 0.5vh;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .product-img {
+    max-width: 50vw;
+  }
+  .product-h1 {
+    font-size: 8vw;
+  }
+  .product-list {
+    flex-direction: column;
+  }
+  .product-name {
+    font-size: 6vw;
+  }
+  .product-price {
+    margin-top: 0vh;
+    font-size: 5vw;
+  }
+}

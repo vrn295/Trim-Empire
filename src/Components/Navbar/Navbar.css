@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#logo-hidden {
+  display: none;
+}
+
+.logo {
+  display: block !important;
+  max-width: 20vh;
+  position: absolute;
+  top: 2vh;
+  left: 10vw;
+}
+
+/* NAVIGATION */
+nav {
+  position: fixed;
+  background: transparent;
+  top: 0%;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+nav .Nav__black {
+  width: 100vw;
+  z-index: 1;
+  background-color: #1e1e1e;
+}
+
+.nav-ul {
+  list-style: none;
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10vw;
+}
+
+.nav-list {
+  display: inline-block;
+  margin-left: 2vw;
+  /* margin-top: 20px; */
+}
+.nav-index {
+  position: relative;
+  text-decoration: none;
+  color: rgb(247, 245, 245);
+  font-weight: 500;
+  font-size: 2.5vh;
+  padding: 5px;
+  font-family: "Alata", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hamburger-container {
+  display: none;
+  position: fixed;
+  right: 10%;
+  top: 3.5%;
+  cursor: pointer;
+}
+
+.hamburger {
+  height: 3px;
+  border-radius: 3px;
+  width: 25px;
+  margin-top: 6px;
+  background-color: white;
+}
+
+/* #home {
+  color: rgb(216, 138, 74);
+} */
+
+@media screen and (max-width: 1000px) {
+  .nav-ul {
+    position: fixed;
+    padding-right: 0%;
+    right: 0%;
+    height: 100vh;
+    top: 0%;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 0%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-list {
+    overflow: hidden;
+    margin: 0%;
+    padding-top: 20%;
+  }
+  .hamburger-container {
+    display: block;
+  }
+  .logo {
+    max-width: 150px;
+    top: 3vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    max-width: 100px;
+    top: 3.5vh;
+  }
+  .nav-ul {
+    height: 100vh;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.nav-list:hover {
+  transform: scale(1.05);
+}

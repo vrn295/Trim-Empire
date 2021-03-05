@@ -1,0 +1,131 @@
+.about-container {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 1.5vw;
+}
+
+.barbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0vw 0vw 3vw 0vw;
+}
+
+.barber-1,
+.barber-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vw;
+}
+
+.barber-info {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin-left: 2vw;
+}
+
+.barber-img {
+  max-width: 20vw;
+}
+
+.barber-name {
+  font-size: 3vw;
+  margin-bottom: 0.5vw;
+}
+
+.company-history {
+  text-align: center;
+  max-width: 70vw;
+  text-align: center;
+  margin-top: 8vw;
+}
+
+.company-history-h2 {
+  font-size: 3vw;
+}
+.company-history-p {
+  margin: 2vw 0px 2vw 0vw;
+  font-size: 1.5vw;
+  text-align: justify;
+}
+
+#about-qoute-line {
+  max-width: 70vw;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  align-content: center;
+  margin: 2vw 0vw 5vw 0vw;
+  justify-content: center;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .barbers {
+    margin: 3vw 0vw 0vw 0vw;
+  }
+
+  .barber-info {
+    width: 50vw;
+  }
+
+  .barber-img {
+    max-width: 30vw;
+    margin-right: 3vw;
+  }
+
+  .barber-name {
+    font-size: 5vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .barber-details {
+    font-size: 2.5vw;
+  }
+
+  .company-history {
+    margin-top: 6vw;
+  }
+
+  .company-history-h2 {
+    font-size: 6vw;
+  }
+  .company-history-p {
+    font-size: 2.5vw;
+  }
+
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  .about-gallery {
+    margin: 0vw 2vw 0vw 2vw;
+  }
+}
