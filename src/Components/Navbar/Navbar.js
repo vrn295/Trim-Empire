@@ -45,7 +45,7 @@ class Navbar extends React.Component {
         <img id='logo-hidden' className={`${this.state.nav && 'logo'}`}  src={logo} alt="logo"/>
         <div className='nav-list-container'>
         <ul id='nav-ul' className="nav-ul">
-          <Link to="/trim">
+          <Link to="/">
             <li className="nav-list">
               <a id="home" className="nav-index" href="# " onClick={() => this.navSlide()}>
                 Home
